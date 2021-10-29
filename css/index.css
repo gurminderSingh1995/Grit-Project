@@ -1,0 +1,690 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: white;
+    
+}
+
+.logo{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 35px;
+    font-weight: 900;
+    background-color: #ffaa80;
+    margin-top: 0;
+    height: 140px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 150px;
+    
+}
+.logo h4{
+    margin-top: 70px;
+    text-align: center;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: #ffaa80;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-links a:hover{
+    color:#3ac6cd
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: #ffaa80;
+    margin: 5px 5px 5px 250px;
+    transition: all 0.3s ease;
+}
+.slider_image{
+    height: 500px;
+    width: 100%;
+    background-color: gray;
+    overflow: hidden;
+}
+.sliderchild{
+    height: 500px;
+    width: 500%;
+    /* background-color: green; */
+    animation: slider infinite 20s 10s;
+}
+.imagecon{
+    height: 500px;
+    width: 20%;
+    background-color: gray;
+    float: left;
+    line-height: 500px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.imagecon_content p{
+    margin-bottom: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .imagecon_content_slide2 p{
+    word-wrap: break-word;
+    width: 50%;
+} */
+.imagecon:nth-child(1){
+    background-image: url('./images/man-doing-exercise-4720236copy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagecon:nth-child(2){
+    background-image: url('./images/slide2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagecon:nth-child(3){
+    background-image: url('./images/slide3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagecon:nth-child(4){
+    background-image: url('./images/man-working-out-2294361copy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagecon:nth-child(5){
+    background-image: url('./images/man-doing-exercise-4720236copy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#openbutton{
+    background: white;
+    border: none;
+    color: #ffaa80;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+#openbutton:hover{
+    color: #3ac6cd;
+}
+@keyframes slider{
+    12.5%{
+        margin-left: -100%;
+    }
+    25%{
+        margin-left: -100%;
+    }
+    37.5%{
+        margin-left: -200%;
+    }
+    50%{
+        margin-left: -200%;
+    }
+    62.5%{
+        margin-left: -300%;
+    }
+    75%{
+        margin-left: -300%;
+    }
+    87.5%{
+        margin-left: -400%;
+    }
+    100%{
+        margin-left: -400%;
+    }
+}
+.imagecon p a{
+    text-align: center;
+    color: #fa9a79;
+}
+/* .img_daypass{
+    background-image: url(./img/pexels-andrea-piacquadio-3917685copy.jpg);
+    height: auto;
+    width: 100%;
+} */
+
+
+.newWorkouts {
+    width: 100%;
+    display: flex;   
+   justify-content: center;
+}
+#workout-1, #workout-2 , #workout-3{
+    width: 100%;
+    
+    line-height: 1.5;
+    padding-bottom: 0px;
+}
+#newworkout-Bg{
+    width: 27%;
+    text-align: center;
+    margin: 35px 20px;
+/*    margin: 10px 10px 50px 10px;*/
+    
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 15px;   
+    
+}
+#newWorkoutBg{
+    background-color: #ffaa80;
+}
+#newWorkoutBg > h2{
+    text-transform: uppercase;
+    font-size: 1.8em;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+.new_workout{
+    /* height: 700px; */
+    /* background-image: linear-gradient(315deg, #c73e1d 0%, #ffaa80 27%, #00cccc 80%); */
+    background-color: #fa9a79;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.new_workout h3{
+    padding: 10px 25px;
+    background-color: #3ac6cd;
+    color: white;
+    width: 14%;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+.new_workouth3{
+    display: flex;
+    flex-direction: row;
+}
+#left{
+    margin-left: 88px;
+}
+#right{
+    margin-left: 58%;
+    background-color: #3ac6cd;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* img cards*/
+.images{
+    margin-top: 3%; 
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    border-radius: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#img{
+    width: 100%;
+    height: 50%;
+    border-radius: 4%;
+    /* margin-top: 80px; */
+}
+.container{
+    text-align: center;
+    padding: 10px 20px;
+    width: 90%;
+}
+.container p{
+    position: relative;
+    left: 8%;
+}
+#column-left,#column-middle,#column-right,#column-last{
+
+    
+    width: 25%;
+    padding: 20px;
+
+}
+/* #column-middle{
+   
+    width: 20%;
+    padding: 5px;
+
+
+}
+#column-right{
+    
+    width: 20%;
+    padding: 5px;
+
+}
+#column-last{
+    width: 20%;
+    padding: 5px;
+} */
+.row{
+    display: flex;
+    flex-flow: row;
+    /* margin-top: 5%; */
+    /* background-color: beige; */
+    /* height: 430px; */
+}
+/*end of img cards */
+.onedayimg{
+    position: relative;
+    filter: brightness(50%);
+}
+.onedaycontent{
+    position: absolute;
+    /* top:160%; */
+    left: 10%;
+    color: white;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.onedaycontent h2{
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    margin-top: -450px;
+}
+.onedaycontent h2 span{
+    color: #fa9a79;
+}
+.onedaycontent p{
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.onedaycontent button{
+    padding: 12px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.daypass{
+    height: 110px;
+    text-align: center;
+    /* margin-top: -1px; */
+}
+.daypass h3{
+    margin-top: 10px;
+    color: #3ac6cd;
+}
+.daypass input[type=text]{
+    margin-top: 10px;
+    width: 40%;
+    height: 30%;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid black;
+}
+
+.daypass input::placeholder{
+    text-align: center;
+    font-size: 20px;
+}
+
+.daypass button{
+    margin-left: -5px;
+    height: 30%;
+    width: 3.5%;
+    border-radius: 0 15px 15px 0;
+    background-color: #3ac6cd;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid black;
+}
+
+footer{
+    background-color: #3ac6cd;
+    width: 100%;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.footercontainer{
+    display: inline-block;
+    width: 100%;
+    padding-top: 30px;
+}
+h3{
+    line-height: 1;
+    margin-bottom: 15px;
+}
+.footerdiv1, .footerdiv2, .footerdiv3, .footerdiv4{
+        float: left;
+        padding-left: 160px;
+        height:220px;
+        width:22%;
+        margin: 0px;
+        background-color: #3ac6cd;
+        line-height: 2;
+        color: #fff;
+        text-decoration: none;
+        text-align: left;  
+} 
+a:link{
+    text-decoration: none;
+}
+a{
+    color: #f2f2f2;
+}
+
+.footerdiv2 p{
+    text-align: left;
+}
+
+.footerdiv3 {
+    line-height: 2 ;
+}
+.footercontainer img{ 
+    margin: 0px 10px;
+    float: left;
+}
+.footerdiv2 a:hover{
+    color: #222;
+}
+
+.footerdiv3 img{
+    border-radius: 60%;
+}
+
+footer p{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+@media only screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .logo{
+        height: 90px;
+        width: 110px;
+        font-size: 25px;
+    }
+    .logo h4{
+        margin-top: 40px;
+        text-align: center;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 330px;
+        top: 8vh;
+        background: rgb(0,204,204,0.7);
+        box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 20px 0 rgba(0, 0, 0, 0.19);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 1;
+    }
+    .nav-links li{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .nav-links a{
+        color: white;
+    }
+    .nav-links a:hover{
+        color: #ffaa80
+    }
+    .burger{
+        display: block;
+    }
+    .line1,.line2,.line3{
+        color: #ffaa80;
+    }
+    #openbutton{
+        background: none;
+        color: white;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        outline: none;
+    }
+    #openbutton:hover{
+        color: #ffaa80;
+    }
+    /*slider*/
+
+    
+    .imagecon{
+        height: 400px;
+        width: 20%;
+        background-color: gray;
+        float: left;
+        line-height: 500px;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .imagecon:nth-child(1){
+        background-image: url('./images/man-doing-exercise-4720236copy.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .imagecon:nth-child(2){
+        background-image: url('./images/slide2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .imagecon:nth-child(3){
+        background-image: url('./images/slide3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .imagecon:nth-child(4){
+        background-image: url('./images/man-working-out-2294361copy.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .imagecon:nth-child(5){
+        background-image: url('./images/man-doing-exercise-4720236copy.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .imagecon p{
+        margin-top: 10px;
+    }
+    .slider_image{
+        height: 400px;
+        width: 100%;
+        background-color: gray;
+        overflow: hidden;
+    }
+    .sliderchild{
+        height: 400px;
+        width: 500%;
+        /* background-color: green; */
+        animation: slider infinite 20s 2s;
+    }
+    
+    /*end of slider*/
+    
+/*    new workout   */
+   
+    .newWorkouts{
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    #workout-1, #workout-2 , #workout-3{
+    width: 100%;
+    line-height: 1.5;
+        font-size: 0.8em;
+    padding-bottom: 0px;
+    }    
+    #newworkout-Bg{
+    width: 75%;
+    margin: 20px auto;
+    transition: none;
+    }
+    
+    .onedaycontent{
+        position: absolute;
+/*         top: 275%; */
+        left: 5%;
+        color: white;
+        font-size: 1em;
+    }
+    .onedaycontent h2{
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        font-size: 15px;
+        margin-top: -195px;
+    }
+    .onedaycontent h2 span{
+        color: #fa9a79;
+    }
+    .onedaycontent p{
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+    .onedaycontent button{
+        padding: 10px 16px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+
+    .daypass h3{
+        margin-top: 10px;
+        color: #3ac6cd;
+        font-size: 15px;
+    }
+
+    .daypass input[type=text]{
+        margin-top: 10px;
+        width: 40%;
+        height: 22%;
+        border-radius: 5px 0 0 5px;
+    }
+    
+    .daypass input::placeholder{
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .daypass button{
+        /* margin-left: -5px; */
+        height: 22%;
+        width: 7%;
+        border-radius: 0 15px 15px 0;
+        background-color: #3ac6cd;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    /*footer*/
+
+    footer{
+        background-color: #3ac6cd;
+        width: 100%;
+    }
+    
+    .footercontainer{
+        display: inline-block;
+        width: 100%;
+        padding-top: 30px;
+        
+    }
+    h3{
+        line-height: 1;
+        margin-bottom: 15px;
+    }
+    .footerdiv1, .footerdiv2, .footerdiv3, .footerdiv4{
+            /* float: left; */
+            padding-left: 13%;
+            /* padding-right: 5%; */
+            height: 230px;
+            width:50%;
+            background-color: #3ac6cd;
+            line-height: 2;
+            color: #fff;
+            text-decoration: none;
+            text-align: left;
+            margin-bottom: 20px;  
+    } 
+
+    .footerdiv3, .footerdiv4{
+        height: 150px;
+    }
+  
+    footer p{
+        text-align: center;
+        color: white;
+        font-size: 15px;
+    }
+
+    /*end of footer*/
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}

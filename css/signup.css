@@ -1,0 +1,139 @@
+body{
+    font-family: Helevetica, sans-serif;
+}
+#sign-up form > h2{
+    text-align: center;
+    font-size: 1.5em;
+}
+#login form > h2{
+    text-align: center;
+    font-size: 1.5em;
+}
+#loginBg{
+
+    position: absolute;
+    top: -40px;
+    background: #fff;
+    overflow:visible;
+    width: 400px;
+    height: 620px;
+/*    left:7.5%;*/
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 150px;
+/*    margin-left: 9%;*/
+    border-radius: 4%;
+    margin-bottom: 40px;
+}
+
+
+.tab {
+    text-align: center;
+    display: inline-block;
+    padding-left: 50px;
+
+}
+
+.tab button {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 0;
+  background-color: #eee;
+  float: left;
+  display: inline;
+    width: 148px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 0px;
+  transition: 0.3s;
+  font-size: 17px;
+    
+}
+
+
+.tab button:hover {
+  background-color: #bbb;
+}
+
+
+.tabcontent {
+    margin-left: 50px;
+    float: left;
+  display: none;
+  padding: 6px 0px;
+  border-top: none;
+}
+#login form, #sign-up form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+form *{
+    padding: 10px;
+    width: 300px;
+    
+    margin: auto;
+    
+}
+form input[type=text],input[type=email],input[type=password]{
+    background-color: antiquewhite;
+    border: none;
+}
+form input[type=checkbox]{
+    width: 15px;
+    background-color: blueviolet;
+    margin-top: 13px;
+    margin-left: 0px;
+}
+#checkBox {
+    display: flex;
+    flex-direction: row;
+}
+form input[type=button]{
+    background-color: #ffaa80;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+    cursor: pointer;
+    border: none;
+/*    margin: 20px 40px;*/
+}
+form input[type=button]:hover{
+    background-color: #ffaa33;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    
+    
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+}
+.closebtn{
+    position: absolute;
+    top:20px;
+    right:45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 768px){
+
+#loginBg{
+        z-index: 1;
+/*
+        left: 50%;
+        margin-left: -200px;
+*/
+    }
+}

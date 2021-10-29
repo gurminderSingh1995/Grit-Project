@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Grit</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="includedContent"></div>
+    <header class="main-head">
+        <nav>
+            <div class="logo">
+                <h4>Grit</h4>
+            </div>
+            <!-- <input type="checkbox" class="menu-check" /> -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li><a href="workout.html">Workout Programs</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="contactUs.html">Contact us</a></li>
+<!--                <li><a href="signup.html">Login/Sign Up</a></li>-->
+                <button class="openbtn" id="openbutton">Login/Sign Up</button>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div id="wrapper2">
+            <div class="contact-address">
+                <div id="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d185436.70180858276!2d-80.61639872785621!3d43.43034885506479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf48c03ee5105%3A0x9525f8e6df5f544b!2sKitchener%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sin!4v1592831718450!5m2!1sen!2sin"></iframe>
+                </div>
+                <div class="address">
+                    <h1>We are located at:</h1>
+                    <br>
+                    <p>299 Doon Valley Drive Kitchener, Ontario N2G 4M4, Canada</p>
+                    <p><strong>Customer service hotline:</strong>&nbsp;888-555-5555, 519-748-5220 </p>
+                    <p><strong>Our opening hours are:</strong>&nbsp;Mondays-Fridays 10am-7pm </p>
+                </div>
+            </div>
+
+
+
+
+            <div class="contact-row">
+
+                <form id="contact" action="" method="post">
+                    <h1>Quick Contact</h1>
+                    <h3>Contact us today and get reply with in 24 hours!</h3>
+                    <fieldset>
+                        <input placeholder="Your name" type="text" tabindex="1" required>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                    </fieldset>
+                    <fieldset>
+                        <textarea placeholder="Type your Message Here...." tabindex="4" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <button name="submit" type="submit" id="submit" data-submit="...sending">Submit</button>
+                    </fieldset>
+
+                </form>
+            </div>
+
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+    <script src="js/signup.js"></script>
+    <script> 
+    $(function(){
+      $("#includedContent").load("signup.html"); 
+    });
+    </script>
+</body>
+<footer>
+    <div class="footercontainer">
+        <div class="footerdiv1">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a><br>
+            <a href="aboutUs.html">About us</a><br>
+            <a href="workout.html">Workout Programs</a><br>
+            <a href="nutrition.html">Nutrition</a><br>
+            <a href="contactUs.html">Contact Us</a><br>
+    
+        </div>
+        <div class="footerdiv2">
+            <h3>Reach us</h3>
+            <a href="mailto:grit@help.com">grit@help.com</a><br>
+            <p>299 Doon Valley<br>Kitchener, Ontario<br>N2G 4M4, Canada <br>+1 1234567890</p>
+        </div>
+        <div class="footerdiv4">
+            <h3>Franchise</h3>
+            <a href="contactUs.html">Grit Advantage</a><br>
+            <a href="contactUs.html">Appy Here</a>
+        </div>
+
+        <div class="footerdiv3">
+            <h3>Follow us on</h3>
+            <a href=""><img src="./images/facebook.png" alt="facebook" height="30px" width=30px>Facebook</a><br>
+            <a href=""><img src="./images/twitter.jpeg" alt="twitter" height="30px" width=30px>Twitter</a><br>
+            <a href=""><img src="./images/instagram.jpeg" alt="instagram" height="30px" width=30px>Instagram</a>
+        </div>
+
+    </div>
+    <p>GRIT by Group E &copy; 2020</p>
+</footer>
+
+</html>
